@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 25px;
+        }
+    </style>
+  </head>
+ 
+  <body>
+  <table>
+  <tr>
+      <td><font size="3"><h1>Classify </h1></font></td>
+      <form action="/upload-file-classify" method="POST" enctype="multipart/form-data">
+       <td> <input type="file" name="file_classify" /> 
+        <input type="submit" value = "CLASSIFY"><td>
+      </form>
+  </tr>
+   <tr>   
+   <td> <font size="3"><h2>Update Class</h2></font> </td>
+    <form action="/add-class" method="POST" enctype="multipart/form-data">
+     <td>   <input type="submit" value = "ADD CLASS"></td>
+    </form>
+   </tr>     
+   <tr>   
+   <td> <font size="3"><h2>Add Picture In Class</h2></font> </td>
+    <form action="/addpic-class" method="POST" enctype="multipart/form-data">
+     <td>   <input type="submit" value = "ADD PICTURE"></td>
+    </form>
+   </tr>     
+        <tr>
+           <td>    <font size="3"> <h4>Train picture in Class </h4></font></td>
+     <td>    <form action="/train-network" method="POST">
+     <input type="submit" value = "train"></td>
+      
+        </form>
+        </tr>
+    </table>
+  </body>
+  
+</html>

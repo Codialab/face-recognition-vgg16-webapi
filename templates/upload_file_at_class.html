@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+  </head>
+ 
+  <body>
+        <br>
+        
+        <form action="/upload-file-at-class" method="POST" enctype="multipart/form-data">
+        
+        <h2>Add Picture in Class</h2>
+        <table>
+        <tr>
+        <td>
+            <h3>Class's Name</h3> 
+        </td>
+        <td>
+            <input type="text" maxlength="512" name = "class_name"/>
+        </td>
+        </tr>
+        <td>
+            <h3>Upload data set</h3> 
+        </td>
+        <td>
+            <input type="file" multiple = "true" name="dataset" />
+        </td>
+        </tr>
+        <tr>
+        <td colspan=2>
+        <input type="submit" value = "Upload">
+        </td>
+        </tr>
+        </table>
+        
+        
+        
+      </form>
+      
+
+    
+      
+      
+      
+  </body>
+  
+</html>
